@@ -19,30 +19,32 @@
 </div>
 <div class="right-side">
   <img src="../assets/Images/Turno_CPU.png" height="100" width="223" />
+  <p>Puntos CPU: {{puntosCpu}} </p>
   <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar bg-info text-dark" style="width: 0%">50%</div>
+    <div class="progress-bar bg-info text-dark" style="{{barraCpu}}">50%</div>
   </div>
-  <br />
+  <br/>
   <div>
-    <button type="button" class="btn btn-outline-info">Piedra</button>
-    <button type="button" class="btn btn-outline-info">Papel</button>
-    <button type="button" class="btn btn-outline-info">Tijeras</button>
-    <button type="button" class="btn btn-outline-info">Lagarto</button>
-    <button type="button" class="btn btn-outline-info">Spock</button>
+    <button type="button" class="btn btn-outline-info " {{btncpu[0]}}> Piedra</button>
+    <button type="button" class="btn btn-outline-info" {{btncpu[1]}} >Papel</button>
+    <button type="button" class="btn btn-outline-info" {{btncpu[2]}} >Tijeras</button>
+    <button type="button" class="btn btn-outline-info" {{btncpu[3]}} >Lagarto</button>
+    <button type="button" class="btn btn-outline-info" {{btncpu[4]}} >Spock</button>
   </div>
   <img src="../assets/Images/Press_Start.gif" height="100" width="600" />
   <img src="../assets/Images/Turno_Player.png" height="100" width="300" />
+  <p>Puntos CPU: {{puntosJugador}}</p>
   <div
     class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar bg-info text-dark" style="width: 0%">50%</div>
+    <div class="progress-bar bg-info text-dark" style="{{barraJugador}}">50%</div>
   </div>
   <br />
   <div>
-    <img src="../assets/Images/piedra.gif" height="55" width="55" />
-    <img src="../assets/Images/papel.gif" height="55" width="55" />
-    <img src="../assets/Images/tijeras.gif" height="55" width="55" />
-    <img src="../assets/Images/lagarto.png" height="55" width="55" />
-    <img src="../assets/Images/spock.gif" height="55" width="55" />
+    <img src="../assets/Images/piedra.gif" height="55" width="55" {{btnjugador}} (click)="InicioJuego(0)"/>
+    <img src="../assets/Images/papel.gif" height="55" width="55" {{btnjugador}} (click)="InicioJuego(1)"/>
+    <img src="../assets/Images/tijeras.gif" height="55" width="55" {{btnjugador}} (click)="InicioJuego(2)"/>
+    <img src="../assets/Images/lagarto.png" height="55" width="55" {{btnjugador}} (click)="InicioJuego(3)"/>
+    <img src="../assets/Images/spock.gif" height="55" width="55" {{btnjugador}} (click)="InicioJuego(4)"/>
   </div>
   <br />
   <div class="btn-important">
