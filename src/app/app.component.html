@@ -25,11 +25,11 @@
   </div>
   <br/>
   <div>
-    <button type="button" class="btn btn-outline-info " {{btncpu[0]}}> Piedra</button>
-    <button type="button" class="btn btn-outline-info" {{btncpu[1]}} >Papel</button>
-    <button type="button" class="btn btn-outline-info" {{btncpu[2]}} >Tijeras</button>
-    <button type="button" class="btn btn-outline-info" {{btncpu[3]}} >Lagarto</button>
-    <button type="button" class="btn btn-outline-info" {{btncpu[4]}} >Spock</button>
+    <button type="button" class="btn btn-outline-info" class=" {{btncpu[0]}}" > Piedra</button>
+    <button type="button" class="btn btn-outline-info" class=" {{btncpu[1]}}"  >Papel</button>
+    <button type="button" class="btn btn-outline-info" class=" {{btncpu[2]}}"  >Tijeras</button>
+    <button type="button" class="btn btn-outline-info" class=" {{btncpu[3]}}" >Lagarto</button>
+    <button type="button" class="btn btn-outline-info" class=" {{btncpu[4]}}" >Spock</button>
   </div>
   <img src="../assets/Images/Press_Start.gif" height="100" width="600" />
   <img src="../assets/Images/Turno_Player.png" height="100" width="300" />
@@ -40,11 +40,11 @@
   </div>
   <br />
   <div>
-    <img src="../assets/Images/piedra.gif" height="55" width="55" {{btnjugador}} (click)="InicioJuego(0)"/>
-    <img src="../assets/Images/papel.gif" height="55" width="55" {{btnjugador}} (click)="InicioJuego(1)"/>
-    <img src="../assets/Images/tijeras.gif" height="55" width="55" {{btnjugador}} (click)="InicioJuego(2)"/>
-    <img src="../assets/Images/lagarto.png" height="55" width="55" {{btnjugador}} (click)="InicioJuego(3)"/>
-    <img src="../assets/Images/spock.gif" height="55" width="55" {{btnjugador}} (click)="InicioJuego(4)"/>
+    <img src="../assets/Images/piedra.gif" height="55" width="55" (click)="InicioJuego(0)"/>
+    <img src="../assets/Images/papel.gif" height="55" width="55"  (click)="InicioJuego(1)"/>
+    <img src="../assets/Images/tijeras.gif" height="55" width="55" (click)="InicioJuego(2)"/>
+    <img src="../assets/Images/lagarto.png" height="55" width="55" (click)="InicioJuego(3)"/>
+    <img src="../assets/Images/spock.gif" height="55" width="55" (click)="InicioJuego(4)"/>
   </div>
   <br />
   <div class="btn-important">

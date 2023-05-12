@@ -15,13 +15,15 @@ export class AppComponent {
   puntosJugador = 0;
   barraJugador = 0;
   btncpu = [
-    "btn-outline-info",
-    "btn-outline-info",
-    "btn-outline-info",
-    "btn-outline-info",
-    "btn-outline-info",
+    "btn btn-outline-info",
+    "btn btn-outline-info",
+    "btn btn-outline-info",
+    "btn btn-outline-info",
+    "btn btn-outline-info",
+    "btn btn-outline-info",
   ];
   btnj = '';
+  btnjugador: any;
 
 
   constructor() {
