@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+.header-img {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.left-side {
+  width: 40%;
+  float: left;
+}
+.btn-outline-info {
+  margin-left: 5%;
+}
+.right-side {
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+}
+
+.right-side img {
+  margin-left: 7%;
+}
+
+.btn-important {
+  margin-left: 10%;
+}
+.card {
+  margin-left: 20%;
+}
