@@ -1,9 +1,14 @@
 .header-img {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 18%;
+  margin-right: 15%;
+}
+ng{
+  color: fuchsia;
 }
 
 .left-side {
+  margin-top: 7%;
+  margin-left: 5%;
   width: 40%;
   float: left;
 }
@@ -13,7 +18,7 @@
 .right-side {
   width: 40%;
   float: left;
-  margin-left: 5%;
+  margin-left: 3%;
 }
 
 .right-side img {
@@ -29,4 +34,28 @@
 
 .disabled{
   pointer-events: none;
+}
+
+.video{
+  margin-top:10%;
+  margin-left: 35%;
+  margin-right: 40%;
+}
+.start{
+  margin-left: 32%;
+  margin-right: 40%;
+}
+.vgif{
+  margin-top:5%;
+  margin-left: 35%;
+  margin-right: 40%;
+}
+.header_Cpu{
+  margin-left: 25%;
+}
+
+.vgif_Empate{
+  margin-top:5%;
+  margin-left: 39%;
+  margin-right: 40%;
 }
