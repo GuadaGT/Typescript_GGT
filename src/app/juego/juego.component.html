@@ -5,11 +5,13 @@
   <br />
 </div>
 <div class="right-side">
+  <div class="Componentes">
   <img src="../assets/Images/Turno_CPU.png" height="100" width="223" />
   <br>
-  <img src="../../assets/Images/Puntuación cpu.png" height="85" width="332"/> <h4> {{puntosCpu}} </h4>
-  <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar bg-info text-dark" style="{{barraCpu}}">50%</div>
+  <img src="../../assets/Images/Puntuación cpu.png" height="85" width="332"/>
+  </div>
+  <div class="progress" role="progressbar" aria-label="Info example" [style.width.%]="barraCpu" [attr.aria-valuenow]="barraCpu">
+    <div class="progress-bar bg-info text-dark" [style.width.%]="barraCpu">{{barraCpu}}%</div>
   </div>
   <br/>
   <div>
@@ -19,15 +21,16 @@
     <button type="button" id="boton-3" class="btn btn-outline-info" class=" {{btncpu[3]}}" >Lagarto</button>
     <button type="button" id="boton-4" class="btn btn-outline-info" class=" {{btncpu[4]}}" >Spock</button>
   </div>
-
+  <br>
+  <div class="Componentes">
   <img src="../assets/Images/Turno_Player.png" height="100" width="300" />
-
-  <img src="../../assets/Images/Puntuacion jugador.png" height="88" width="402"/> <h4>{{puntosJugador}}</h4>
-  <div
-    class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-    <div class="progress-bar bg-info text-dark" style="{{barraJugador}}">50%</div>
+  <img src="../../assets/Images/Puntuacion jugador.png" height="88" width="402"/>
   </div>
-  <br />
+  <div class="progress" role="progressbar" aria-label="Info example" [style.width.%]="barraJugador" [attr.aria-valuenow]="barraJugador">
+    <div class="progress-bar bg-info text-dark" [style.width.%]="barraJugador">{{barraJugador}}%</div>
+  </div>
+
+  <br/>
   <div>
     <img src="../assets/Images/piedra.gif" height="55" width="55" (click)="InicioJuego(0)"/>
     <img src="../assets/Images/papel.gif" height="55" width="55"  (click)="InicioJuego(1)"/>

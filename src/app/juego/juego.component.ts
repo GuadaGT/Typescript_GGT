@@ -126,7 +126,7 @@ export class JuegoComponent {
 
   public ganaCpu() {
     this.puntosCpu++;
-    this.barraCpu = this.barraCpu + 20;
+    this.barraCpu = this.barraCpu += 20;
     if(this.puntosCpu == 5)
     {
       this.router.navigate(['/ganaCpu']);
@@ -135,7 +135,7 @@ export class JuegoComponent {
 
   public ganaJugador() {
     this.puntosJugador++;
-    this.barraJugador = this.barraJugador + 10;
+    this.barraJugador = this.barraJugador += 20;
     if(this.puntosJugador == 5)
     {
       this.router.navigate(['/ganaHumano']);
