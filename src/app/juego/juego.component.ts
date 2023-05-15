@@ -34,12 +34,9 @@ export class JuegoComponent {
     let cpuBtnIndex = cpu;
     let cpuBtnClassIndex = Math.floor(Math.random() * 5);
 
-    // Restaurar los colores originales antes de actualizar el color del botón aleatorio
     for (let i = 0; i < this.btncpu.length; i++) {
       this.btncpu[i] = this.btncpu[i].replace("btn-dark", "btn-outline-info");
     }
-
-    // Actualizar el color del botón aleatorio
     this.btncpu[cpuBtnIndex] = this.btncpu[cpuBtnClassIndex];
     this.btncpu[cpuBtnIndex] = "btn btn-dark";
 
